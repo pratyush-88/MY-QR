@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+background: rgb(175, 199, 17);
+}
+.container{
+    height: 300px;
+    width: 400px;
+    padding: 25px 35px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgb(79, 129, 142);
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+    opacity: 0.8;
+}
+
+.container p{
+    font-weight: 600;
+    font-size: 30px;
+    margin-bottom: 8px;
+    
+    
+
+}
+.container input{
+    width: 100%;
+    height: 30px;
+    border: 1px solid rgb(8, 4, 4);
+    outline: 0;
+    padding: 5px;
+    margin: 10px 0 20px;
+    border-radius: 5px;
+    /* background-color: rgba(239, 234, 234, 0.2); */
+}
+
+button{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    left: 40%;
+    align-items: center;
+    /* margin: 10px auto; */
+    width: 100px;
+    /* padding: 10px, 25px ; */
+    height: 50px;
+    background-color:rgb(54, 233, 212);
+    color:black;
+    border: 0;
+    outline: 0;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    margin: 20px 0;
+    font-weight:500;
+
+}
+#imgBox{
+    width: 200px;
+    border-radius: 5px;
+    max-width: 0;
+    overflow: hidden;
+    transition: max-width 1s;
+
+}
+#imgBox img{
+    width: 100px;
+    padding: 10px;
+}
+#imgBox.show-img{
+    max-width: 200px;
+    margin: 10px auto;
+    /* border: 1px solid black; */
+
+}
+/* .nav{
+    background-color:cyan;
+    color: rgb(101, 15, 108);
+    font-style: italic;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: 1px solid black;
+    padding: 3px;
+    margin: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 5px; */
+
+
+.img2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: fixed;
+    /* opacity: 0.5; */
+    display: flex;
+    filter: blur(5px);
+
+}
+.show-img{
+    display: block;
+    
+}
+
+#qrImage{
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+    /* margin: 10px auto; */
+    display:none;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+    transition: 1s;
+    animation: 1s ease-in-out;
+}
